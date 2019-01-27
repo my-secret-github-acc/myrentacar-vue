@@ -1,9 +1,759 @@
-<!DOCTYPE html><html lang="en"><head><link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet"><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/favicon.ico"><title>lol</title><link href="/css/app.18e5d1cc.css" rel="preload" as="style"><link href="/js/app.cb33a167.js" rel="preload" as="script"><link href="/js/chunk-vendors.d1e43ed6.js" rel="preload" as="script"><link href="/css/app.18e5d1cc.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but lol doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div data-v-49ff9b2c="" id="app"><section data-v-49ff9b2c="" class="mobile-bar flex"><svg data-v-49ff9b2c="" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-49ff9b2c="" fill-rule="evenodd" clip-rule="evenodd" d="M5 10C7.76142 10 10 7.76142 10 5C10 2.23858 7.76142 0 5 0C2.23858 0 0 2.23858 0 5C0 7.76142 2.23858 10 5 10Z" fill="white"></path></svg><svg data-v-49ff9b2c="" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-49ff9b2c="" fill-rule="evenodd" clip-rule="evenodd" d="M5 10C7.76142 10 10 7.76142 10 5C10 2.23858 7.76142 0 5 0C2.23858 0 0 2.23858 0 5C0 7.76142 2.23858 10 5 10Z" fill="white"></path></svg><svg data-v-49ff9b2c="" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-49ff9b2c="" fill-rule="evenodd" clip-rule="evenodd" d="M5 10C7.76142 10 10 7.76142 10 5C10 2.23858 7.76142 0 5 0C2.23858 0 0 2.23858 0 5C0 7.76142 2.23858 10 5 10Z" fill="white"></path></svg></section><section data-v-49ff9b2c="" class="top"><div data-v-49ff9b2c="" class="flex"><nav data-v-49ff9b2c="" class="nav-menu"><a data-v-49ff9b2c="" href="#">Все курорты</a><a data-v-49ff9b2c="" href="#">О компании</a><a data-v-49ff9b2c="" href="#">Контакты</a><a data-v-49ff9b2c="" href="#">Журнал о Чехии</a></nav><div data-v-49ff9b2c="" id="language"><a data-v-49ff9b2c="" href="#">In English, please</a></div><div data-v-49ff9b2c="" id="currency__current" class="currency"><div data-v-49ff9b2c="" id="currency__current__click-zone"><a data-v-49ff9b2c="" href="#">руб</a><svg data-v-49ff9b2c="" width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-49ff9b2c="" fill-rule="evenodd" clip-rule="evenodd" d="M0 0L5 5L10 0H0Z" fill="white"></path></svg></div><div data-v-49ff9b2c="" id="currency__popup" class="flex-column"><a data-v-49ff9b2c="" href="#">Usd<span data-v-49ff9b2c="">$</span></a><!----><a data-v-49ff9b2c="" href="#">Eur<span data-v-49ff9b2c="">€</span></a></div></div></div><div data-v-49ff9b2c="" class="nav-menu__bar"><div data-v-49ff9b2c="" class="nav-menu__bar-slider"></div></div><div data-v-49ff9b2c="" class="flex"><div data-v-49ff9b2c="" class="top__column-left"><h2 data-v-49ff9b2c="">MYRENTACAR . ЧЕХИЯ</h2><p data-v-49ff9b2c="" class="top__recommended">
+<!DOCTYPE html><html lang="en"><head>
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico">
+    <title>lol</title>
+  <link href="/app.js" rel="preload" as="script"><style type="text/css">/* Reset */
+a {
+  color: #fff;
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  margin: 0;
+  list-style: none;
+}
+
+/* Main */
+:root {
+  --primary-color: #27c79a;
+  --primary-border-radius: 2px;
+}
+body {
+  font-family: Montserrat;
+  background: #fafafa;
+  max-width: 1028px;
+  margin: 0 auto;
+}
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+p {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+/* Top */
+.mobile-bar {
+  background: #000;
+  margin-left: 4px;
+  padding-left: 25px;
+  height: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.mobile-bar svg {
+  margin-right: 15px;
+}
+.top {
+  color: #fff;
+  margin-left: 4px;
+  padding: 10px 72px 0 64px;
+  height: 367px;
+  background: -webkit-gradient(
+      linear,
+      left bottom, left top,
+      from(rgba(30, 42, 53, 0.8)),
+      to(rgba(30, 42, 53, 0.8))
+    ),
+    url(/img/bg.ee6c0d39.png);
+  background: linear-gradient(
+      0deg,
+      rgba(30, 42, 53, 0.8),
+      rgba(30, 42, 53, 0.8)
+    ),
+    url(/img/bg.ee6c0d39.png);
+  background-repeat: no-repeat;
+}
+.nav-menu {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.nav-menu__bar {
+  top: 4px;
+
+  position: relative;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+}
+.nav-menu__bar-slider {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background: #fff;
+  height: 2px;
+  width: 87px;
+}
+.nav-menu a {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 38px;
+  opacity: 0.6;
+  letter-spacing: -0.01em;
+}
+.nav-menu a:hover {
+  opacity: 1;
+  -webkit-transition: 0.05s ease;
+  transition: 0.05s ease;
+}
+#language {
+  width: 167px;
+  line-height: 20px;
+  font-size: 12px;
+}
+.currency {
+  position: relative;
+  font-weight: bold;
+  line-height: 20px;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+.currency svg {
+  margin-left: 12px;
+}
+#currency__current {
+  padding-bottom: 5px; /*hover zone*/
+  z-index: 1;
+}
+#currency__current__click-zone {
+  cursor: pointer;
+}
+#currency__popup:hover,
+#currency__current:hover #currency__popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#currency__popup {
+  display: none;
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+
+  top: 25px;
+  left: -10px;
+  width: 74px;
+
+  padding: 5px 0;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 10px 25px rgba(30, 42, 53, 0.1);
+          box-shadow: 0px 10px 25px rgba(30, 42, 53, 0.1);
+  border-radius: var(--primary-border-radius);
+  z-index: 1;
+}
+#currency__popup a {
+  display: block;
+  color: #1e2a35;
+  padding: 7px 10px;
+}
+#currency__popup a:hover {
+  color: var(--primary-color);
+  -webkit-transition: 0.05s ease;
+  transition: 0.05s ease;
+}
+#currency__popup a:hover span {
+  color: #1e2a35;
+}
+#currency__popup span {
+  margin-left: 10px;
+  font-weight: normal;
+  font-size: 11px;
+  color: #999ea7;
+}
+.top h2 {
+  margin-top: 29px;
+  margin-left: -1px;
+  margin-bottom: -4px;
+  font-style: italic;
+  font-size: 24px;
+}
+.top__recommended {
+  max-width: 260px;
+  line-height: 1.6em;
+}
+h1 {
+  margin-top: 26px;
+  margin-left: -3.5px;
+  font-weight: 900;
+  font-size: 64px;
+}
+.top__column-left {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.top__column-right {
+  padding-top: 37px;
+  padding-right: 15px;
+}
+.reviews {
+  display: block;
+  font-weight: 900;
+  font-size: 16px;
+  margin-left: -2px;
+}
+.heart {
+  position: relative;
+  top: 4px;
+}
+.articles {
+  margin-top: 61px;
+}
+.articles a {
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.articles li {
+  margin-bottom: 17px;
+  height: 23px;
+}
+.articles span {
+  margin-left: 10px;
+  color: #fff;
+  opacity: 0.6;
+}
+.articles span:hover {
+  opacity: 1;
+}
+.articles svg {
+  position: relative;
+  top: 8px;
+  margin-right: 9px;
+}
+.top__stats {
+  margin-top: -2px;
+  line-height: 21px;
+  font-size: 14px;
+}
+
+/* Settings */
+.settings {
+  margin: -37px 65px -4px 68px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 69px;
+  color: #fff;
+}
+.settings__setting {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: var(--primary-border-radius);
+  padding: 1px 15px 0 15px;
+  height: 100%;
+  background: -webkit-gradient(
+      linear,
+      left bottom, left top,
+      from(rgba(30, 42, 53, 0.1)),
+      to(rgba(30, 42, 53, 0.1))
+    ),
+    var(--primary-color);
+  background: linear-gradient(
+      0deg,
+      rgba(30, 42, 53, 0.1),
+      rgba(30, 42, 53, 0.1)
+    ),
+    var(--primary-color);
+
+  letter-spacing: 0.03em;
+}
+.settings__divider {
+  margin-left: -2px;
+  width: 2px;
+  height: 100%;
+  opacity: 0.2;
+  background: #fff;
+}
+.settings__setting-city {
+  width: 270px;
+  border-radius: 2px 0 0 2px;
+}
+.settings__setting-dates {
+  width: 265px;
+  border-radius: 0 2px 2px 0;
+}
+.settings__setting-filters {
+  background: var(--primary-color);
+  width: 265px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 5px;
+}
+.settings__setting-filters svg {
+  position: relative;
+  right: -7px;
+}
+.settings__label {
+  display: block;
+  line-height: 20px;
+  font-size: 12px;
+  opacity: 0.8;
+}
+.settings__choice {
+  display: block;
+  font-weight: 500;
+  line-height: 30px;
+  font-size: 16px;
+}
+
+/* Cars header*/
+.cars__header {
+  margin: 0 64px 0 71px;
+}
+.cars__header h2 {
+  color: #232a36;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 42px;
+  margin-bottom: 4px;
+}
+.cars__header a {
+  color: #232a36;
+  font-weight: bold;
+  line-height: 34px;
+  font-size: 16px;
+}
+.cars__header__column-left {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.cars__header__type-link {
+  position: relative;
+  margin-right: 12.5px;
+}
+.cars__header__type-link span {
+  display: inline-block;
+  width: 15px;
+  position: relative;
+  bottom: 5px;
+  left: 5px;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 11px;
+  color: #999ea7;
+}
+.cars__header__column-right {
+  margin-top: 39px;
+}
+.cars__header__display {
+  margin-left: 23px;
+}
+.cars__header__display svg {
+  fill: #999ea7;
+  position: relative;
+  top: 3px;
+}
+.cars__header__display:last-of-type {
+  margin-right: 3px;
+  margin-left: 20px;
+}
+.cars__header__display-active svg {
+  fill: var(--primary-color);
+}
+#cars__header__type-active-bar {
+  margin-top: -5px;
+  width: 32px;
+  height: 2px;
+  background: #1fa4d4;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* Car type banners: */
+.cars__types {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 222px);
+  grid-column-gap: 4.5px;
+
+  margin: 38px 50px 35px 71px;
+}
+.cars__type {
+  height: 121px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.cars__type__overlay {
+  display: block;
+  background: rgba(0, 0, 0, 0.22);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.cars__type__wrapper {
+  width: 444px;
+  height: 242px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: -62px;
+  left: -111px;
+}
+.cars__type img {
+  display: block;
+  -webkit-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.1);
+  border-radius: var(--primary-border-radius);
+}
+.cars__type h3 {
+  position: absolute;
+  top: -2px;
+  left: 20px;
+  font-weight: 900;
+  font-size: 20px;
+  color: #ffffff;
+  z-index: 1;
+}
+.cars__type span {
+  position: absolute;
+  bottom: 17px;
+  left: 25px;
+  font-weight: 500;
+  font-size: 13px;
+  color: #f5f7f9;
+  z-index: 1;
+}
+
+/* Cars main grid*/
+.cars {
+  padding: 10px 66px 0 66px;
+}
+.cars__grid {
+  position: relative;
+  margin-left: -4px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 220px);
+  grid-gap: 21px 5px;
+}
+.sliding {
+  -webkit-animation: slide 0.65s ease;
+          animation: slide 0.65s ease;
+}
+@-webkit-keyframes slide {
+from {
+    left: 1300px;
+}
+to {
+    left: 0px;
+}
+}
+@keyframes slide {
+from {
+    left: 1300px;
+}
+to {
+    left: 0px;
+}
+}
+.car {
+  display: block;
+  position: relative;
+  width: 220px;
+  height: 330px;
+  color: #1e2a35;
+  z-index: 1;
+}
+.car__text {
+  padding: 13.4px 15px;
+}
+.car__features {
+  position: absolute;
+  top: -5px;
+  left: 1px;
+  margin: 10px;
+}
+.car__feature {
+  width: auto;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 5px;
+  padding: 0 10px;
+  color: #fff;
+  background: var(--primary-color);
+  font-weight: bold;
+  font-size: 11px;
+  text-transform: uppercase;
+  border-radius: var(--primary-border-radius);
+  height: 20px;
+  line-height: 20px;
+}
+.car__feature-white {
+  color: #1e2a35;
+  background: #fff;
+}
+.car__image__front {
+  display: block;
+  margin: 0 auto;
+}
+.car__image__back {
+  position: relative;
+  display: none;
+  margin: 0 auto;
+  border-radius: 2px 2px 0px 0px;
+}
+.car__bg {
+  background: #fff;
+  -webkit-box-shadow: 0px 5px 15px rgba(30, 42, 53, 0.05);
+          box-shadow: 0px 5px 15px rgba(30, 42, 53, 0.05);
+  border-radius: var(--primary-border-radius);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.car__images {
+  display: block;
+  height: 160px;
+}
+.car__images:hover .car__image__back {
+  display: block;
+}
+.car__images:hover .car__image__front {
+  display: none;
+}
+.car__images:hover ~ .car__bg {
+  -webkit-box-shadow: 0px 15px 35px rgba(30, 42, 53, 0.15);
+          box-shadow: 0px 15px 35px rgba(30, 42, 53, 0.15);
+}
+.car__images:hover ~ .car__features {
+  display: none;
+}
+.car__images img {
+  display: block;
+}
+.car__images__bars {
+  position: absolute;
+  bottom: 10px;
+  left: 50px;
+  display: grid;
+  grid-template-columns: repeat(5, 20px);
+  grid-column-gap: 5px;
+  height: 2px;
+}
+.car__images__bar {
+  background: #fff;
+}
+.car__images__bar-active {
+  background: var(--primary-color);
+}
+.car h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  display: block;
+  margin: 1px 0 5px 0;
+}
+.car p {
+  line-height: 20px;
+  font-size: 14px;
+  margin: 0;
+}
+.car__price-day {
+  display: block;
+  position: absolute;
+  bottom: 15px;
+  font-size: 14px;
+}
+.car__price-total {
+  display: block;
+  position: absolute;
+  padding-left: 1px;
+  bottom: 40px;
+  font-weight: 900;
+  font-size: 24px;
+}
+
+/* Car info slide */
+.car__slide {
+  pointer-events: none;
+  position: absolute;
+  width: 220px;
+  height: 100%;
+  bottom: 0px;
+  left: 0px;
+}
+.car__slide__inner {
+  opacity: 0;
+  background: #ffffff;
+  text-align: center;
+  border-radius: 0px 0px 2px 2px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 0px;
+  padding-top: 165px;
+  z-index: 1;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+  overflow-y: hidden;
+}
+.car__info-icon {
+  pointer-events: all;
+  position: absolute;
+  right: 16px;
+  bottom: 41px;
+  opacity: 0.6;
+}
+.car__slide__inner:hover,
+.car__info-icon:hover + .car__slide__inner {
+  opacity: 0.95;
+  height: 165px;
+  padding-top: 0px;
+  pointer-events: all;
+}
+.car__slide__icon {
+  margin-top: 21;
+}
+.car__slide__grid {
+  text-align: left;
+  font-size: 14px;
+  padding: 32px 0 0 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 1.3em;
+  grid-gap: 0.5em 35px;
+}
+.car__slide__grid-total {
+  font-weight: bold;
+}
+
+/* "Load more" button */
+.cars__button-row {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 200px;
+}
+.cars__button-load {
+  margin-top: 73.3px;
+  margin-left: 8px;
+  display: block;
+  width: 276px;
+  height: 40px;
+  padding-top: 1px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  line-height: 41px;
+  background: var(--primary-color);
+  -webkit-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.05);
+  border-radius: var(--primary-border-radius);
+}
+
+/* Banner */
+.banner {
+  position: relative;
+  display: block;
+  width: 901px;
+  height: 122px;
+  border-radius: 3px;
+  background: url(/img/banner.67ccce69.png);
+  margin: 42px 0 22px 5px;
+}
+.banner span {
+  display: block;
+  position: absolute;
+  top: 45px;
+  left: 37.5px;
+  color: #fff;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 30px;
+}
+
+/* Small screens */
+@media only screen and (max-width: 810px) {
+.cars,
+  .cars__types {
+    padding: 0 2%;
+}
+.cars__grid,
+  .cars__types {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.settings__label {
+    display: none;
+}
+}
+@media only screen and (max-width: 1010px) {
+.top__column-right,
+  .top p {
+    display: none;
+}
+}
+</style><style type="text/css">
+</style></head>
+  <body>
+    <noscript>
+      <strong>We're sorry but lol doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div data-v-7ba5bd90="" id="app"><section data-v-7ba5bd90="" class="mobile-bar flex"><svg data-v-7ba5bd90="" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-7ba5bd90="" fill-rule="evenodd" clip-rule="evenodd" d="M5 10C7.76142 10 10 7.76142 10 5C10 2.23858 7.76142 0 5 0C2.23858 0 0 2.23858 0 5C0 7.76142 2.23858 10 5 10Z" fill="white"></path></svg><svg data-v-7ba5bd90="" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-7ba5bd90="" fill-rule="evenodd" clip-rule="evenodd" d="M5 10C7.76142 10 10 7.76142 10 5C10 2.23858 7.76142 0 5 0C2.23858 0 0 2.23858 0 5C0 7.76142 2.23858 10 5 10Z" fill="white"></path></svg><svg data-v-7ba5bd90="" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-7ba5bd90="" fill-rule="evenodd" clip-rule="evenodd" d="M5 10C7.76142 10 10 7.76142 10 5C10 2.23858 7.76142 0 5 0C2.23858 0 0 2.23858 0 5C0 7.76142 2.23858 10 5 10Z" fill="white"></path></svg></section><section data-v-7ba5bd90="" class="top"><div data-v-7ba5bd90="" class="flex"><nav data-v-7ba5bd90="" class="nav-menu"><a data-v-7ba5bd90="" href="#">Все курорты</a><a data-v-7ba5bd90="" href="#">О компании</a><a data-v-7ba5bd90="" href="#">Контакты</a><a data-v-7ba5bd90="" href="#">Журнал о Чехии</a></nav><div data-v-7ba5bd90="" id="language"><a data-v-7ba5bd90="" href="#">In English, please</a></div><div data-v-7ba5bd90="" id="currency__current" class="currency"><div data-v-7ba5bd90="" id="currency__current__click-zone"><a data-v-7ba5bd90="" href="#">руб</a><svg data-v-7ba5bd90="" width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-7ba5bd90="" fill-rule="evenodd" clip-rule="evenodd" d="M0 0L5 5L10 0H0Z" fill="white"></path></svg></div><div data-v-7ba5bd90="" id="currency__popup" class="flex-column"><a data-v-7ba5bd90="" href="#">Usd<span data-v-7ba5bd90="">$</span></a><!----><a data-v-7ba5bd90="" href="#">Eur<span data-v-7ba5bd90="">€</span></a></div></div></div><div data-v-7ba5bd90="" class="nav-menu__bar"><div data-v-7ba5bd90="" class="nav-menu__bar-slider"></div></div><div data-v-7ba5bd90="" class="flex"><div data-v-7ba5bd90="" class="top__column-left"><h2 data-v-7ba5bd90="">MYRENTACAR . ЧЕХИЯ</h2><p data-v-7ba5bd90="" class="top__recommended">
              Рекомендательный прокат автомобилей на курортах и в туристических
              городах
-           </p><h1 data-v-49ff9b2c="">Аренда в Чехии</h1><p data-v-49ff9b2c="" class="top__stats">
+           </p><h1 data-v-7ba5bd90="">Аренда в Чехии</h1><p data-v-7ba5bd90="" class="top__stats">
              Всего 2 345 автомобилей со средним чеком €24 в сутки
-           </p></div><div data-v-49ff9b2c="" class="top__column-right"><a data-v-49ff9b2c="" href="#" class="reviews">
+           </p></div><div data-v-7ba5bd90="" class="top__column-right"><a data-v-7ba5bd90="" href="#" class="reviews">
              ОТЗЫВЫ · 3 956
-             <svg data-v-49ff9b2c="" width="15" height="14" xmlns="http://www.w3.org/2000/svg" class="heart"><path data-v-49ff9b2c="" fill-rule="evenodd" clip-rule="evenodd" d="M7.5 13.5211L6.4125 12.5484C2.55 9.10737 0 6.83789 0 4.05263C0 1.78316 1.815 0 4.125 0C5.43 0 6.6825 0.596842 7.5 1.54C8.3175 0.596842 9.57 0 10.875 0C13.185 0 15 1.78316 15 4.05263C15 6.83789 12.45 9.10737 8.5875 12.5558L7.5 13.5211Z" fill="#E86260"></path></svg><p data-v-49ff9b2c="">Мнение наших клиентов</p></a><ul data-v-49ff9b2c="" class="articles"><li data-v-49ff9b2c=""><svg data-v-49ff9b2c="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g data-v-49ff9b2c="" opacity="0.600657"><path data-v-49ff9b2c="" fill-rule="evenodd" clip-rule="evenodd" d="M18.92 5.01C18.72 4.42 18.16 4 17.5 4H6.5C5.84 4 5.29 4.42 5.08 5.01L3 11V19C3 19.55 3.45 20 4 20H5C5.55 20 6 19.55 6 19V18H18V19C18 19.55 18.45 20 19 20H20C20.55 20 21 19.55 21 19V11L18.92 5.01ZM6.5 15C5.67 15 5 14.33 5 13.5C5 12.67 5.67 12 6.5 12C7.33 12 8 12.67 8 13.5C8 14.33 7.33 15 6.5 15ZM17.5 15C16.67 15 16 14.33 16 13.5C16 12.67 16.67 12 17.5 12C18.33 12 19 12.67 19 13.5C19 14.33 18.33 15 17.5 15ZM5 10L6.5 5.5H17.5L19 10H5Z" fill="white"></path></g></svg><a data-v-49ff9b2c="" href="#">Особенности ПДД</a></li><li data-v-49ff9b2c=""><svg data-v-49ff9b2c="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g data-v-49ff9b2c="" opacity="0.600657"><path data-v-49ff9b2c="" fill-rule="evenodd" clip-rule="evenodd" d="M20.5 3L20.34 3.03L15 5.1L9 3L3.36 4.9C3.15 4.97 3 5.15 3 5.38V20.5C3 20.78 3.22 21 3.5 21L3.66 20.97L9 18.9L15 21L20.64 19.1C20.85 19.03 21 18.85 21 18.62V3.5C21 3.22 20.78 3 20.5 3ZM15 19L9 16.89V5L15 7.11V19Z" fill="white"></path></g></svg><a data-v-49ff9b2c="" href="#">Подборка маршрутов</a></li><li data-v-49ff9b2c=""><svg data-v-49ff9b2c="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g data-v-49ff9b2c="" opacity="0.600657"><path data-v-49ff9b2c="" fill-rule="evenodd" clip-rule="evenodd" d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="white"></path></g></svg><a data-v-49ff9b2c="" href="#">О стране<span data-v-49ff9b2c="">+ скачать .PDF</span></a></li></ul></div></div></section><section data-v-49ff9b2c="" class="settings flex"><a data-v-49ff9b2c="" href="#" class="settings__setting settings__setting-city flex-column"><span data-v-49ff9b2c="" class="settings__label">Город получения и возврата</span><span data-v-49ff9b2c="" class="settings__choice">Карловы Вары</span></a><div data-v-49ff9b2c="" class="settings__divider"></div><a data-v-49ff9b2c="" href="#" class="settings__setting settings__setting-dates flex-column"><span data-v-49ff9b2c="" class="settings__label">Даты аренды</span><span data-v-49ff9b2c="" class="settings__choice">28 фев. – 9 мар. · 10 дней</span></a><a data-v-49ff9b2c="" href="#" class="settings__setting settings__setting-filters flex"><span data-v-49ff9b2c="" class="settings__choice">Расширенные фильтры</span><svg data-v-49ff9b2c="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g data-v-49ff9b2c="" opacity="0.6"><path data-v-49ff9b2c="" fill-rule="evenodd" clip-rule="evenodd" d="M7 10L12 15L17 10H7Z" fill="white"></path></g></svg></a></section><section data-v-49ff9b2c="" class="cars__header flex"><div data-v-49ff9b2c="" class="cars__header__column-left"><h2 data-v-49ff9b2c="">
-           123 автомобилей из <span data-v-49ff9b2c="" style="white-space: nowrap;">2 102</span></h2><a data-v-49ff9b2c="" href="#" class="cars__header__type-link">Все<span data-v-49ff9b2c="">112</span></a><a data-v-49ff9b2c="" href="#" class="cars__header__type-link">Компактные<span data-v-49ff9b2c="">89</span></a><a data-v-49ff9b2c="" href="#" class="cars__header__type-link">Средний класс<span data-v-49ff9b2c="">102</span></a><a data-v-49ff9b2c="" href="#" class="cars__header__type-link">Люкс<span data-v-49ff9b2c="">54</span></a><a data-v-49ff9b2c="" href="#" class="cars__header__type-link">Внедорожники<span data-v-49ff9b2c="">24</span></a><div data-v-49ff9b2c="" id="cars__header__type-active-bar"></div></div><div data-v-49ff9b2c="" class="cars__header__column-right"><a data-v-49ff9b2c="" href="#" class="cars__header__cheap">Сначала дешевые</a><a data-v-49ff9b2c="" href="#" class="cars__header__display"><svg data-v-49ff9b2c="" width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-49ff9b2c="" fill-rule="evenodd" clip-rule="evenodd" d="M0 6H5V0H0V6ZM0 13H5V7H0V13ZM6 13H11V7H6V13ZM12 13H17V7H12V13ZM6 6H11V0H6V6ZM12 0V6H17V0H12Z"></path></svg></a><a data-v-49ff9b2c="" href="#" class="cars__header__display cars__header__display-active"><svg data-v-49ff9b2c="" width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-49ff9b2c="" fill-rule="evenodd" clip-rule="evenodd" d="M0 13H17V7H0V13ZM0 0V6H17V0H0Z"></path></svg></a></div></section><section data-v-49ff9b2c="" class="cars__types"><a data-v-49ff9b2c="" href="#" class="cars__type"><div data-v-49ff9b2c="" class="cars__type__overlay"></div><h3 data-v-49ff9b2c="">Новые</h3><span data-v-49ff9b2c="">453 автомобиля</span><div data-v-49ff9b2c="" class="cars__type__wrapper"><img data-v-49ff9b2c="" src="/img/new.66f86730.png" alt="new"></div></a><a data-v-49ff9b2c="" href="#" class="cars__type"><div data-v-49ff9b2c="" class="cars__type__overlay"></div><h3 data-v-49ff9b2c="">Быстрые</h3><span data-v-49ff9b2c="">26 автомобилей</span><div data-v-49ff9b2c="" class="cars__type__wrapper"><img data-v-49ff9b2c="" src="/img/fast.cbcfe931.png" alt="fast"></div></a><a data-v-49ff9b2c="" href="#" class="cars__type"><div data-v-49ff9b2c="" class="cars__type__overlay"></div><h3 data-v-49ff9b2c="">Экономичные</h3><span data-v-49ff9b2c="">213 автомобилей</span><div data-v-49ff9b2c="" class="cars__type__wrapper"><img data-v-49ff9b2c="" src="/img/economy.b600be8e.png" alt="economy"></div></a><a data-v-49ff9b2c="" href="#" class="cars__type"><div data-v-49ff9b2c="" class="cars__type__overlay"></div><h3 data-v-49ff9b2c="">Внедорожники</h3><span data-v-49ff9b2c="">453 автомобиля</span><div data-v-49ff9b2c="" class="cars__type__wrapper"><img data-v-49ff9b2c="" src="/img/crossroad.6d138f8e.png" alt="crossroad"></div></a></section><section data-v-49ff9b2c="" class="cars"></section><div data-v-49ff9b2c="" class="cars__button-row flex"><!----></div></div><script src="/js/chunk-vendors.d1e43ed6.js"></script><script src="/js/app.cb33a167.js"></script></body></html>
+             <svg data-v-7ba5bd90="" width="15" height="14" xmlns="http://www.w3.org/2000/svg" class="heart"><path data-v-7ba5bd90="" fill-rule="evenodd" clip-rule="evenodd" d="M7.5 13.5211L6.4125 12.5484C2.55 9.10737 0 6.83789 0 4.05263C0 1.78316 1.815 0 4.125 0C5.43 0 6.6825 0.596842 7.5 1.54C8.3175 0.596842 9.57 0 10.875 0C13.185 0 15 1.78316 15 4.05263C15 6.83789 12.45 9.10737 8.5875 12.5558L7.5 13.5211Z" fill="#E86260"></path></svg><p data-v-7ba5bd90="">Мнение наших клиентов</p></a><ul data-v-7ba5bd90="" class="articles"><li data-v-7ba5bd90=""><svg data-v-7ba5bd90="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g data-v-7ba5bd90="" opacity="0.600657"><path data-v-7ba5bd90="" fill-rule="evenodd" clip-rule="evenodd" d="M18.92 5.01C18.72 4.42 18.16 4 17.5 4H6.5C5.84 4 5.29 4.42 5.08 5.01L3 11V19C3 19.55 3.45 20 4 20H5C5.55 20 6 19.55 6 19V18H18V19C18 19.55 18.45 20 19 20H20C20.55 20 21 19.55 21 19V11L18.92 5.01ZM6.5 15C5.67 15 5 14.33 5 13.5C5 12.67 5.67 12 6.5 12C7.33 12 8 12.67 8 13.5C8 14.33 7.33 15 6.5 15ZM17.5 15C16.67 15 16 14.33 16 13.5C16 12.67 16.67 12 17.5 12C18.33 12 19 12.67 19 13.5C19 14.33 18.33 15 17.5 15ZM5 10L6.5 5.5H17.5L19 10H5Z" fill="white"></path></g></svg><a data-v-7ba5bd90="" href="#">Особенности ПДД</a></li><li data-v-7ba5bd90=""><svg data-v-7ba5bd90="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g data-v-7ba5bd90="" opacity="0.600657"><path data-v-7ba5bd90="" fill-rule="evenodd" clip-rule="evenodd" d="M20.5 3L20.34 3.03L15 5.1L9 3L3.36 4.9C3.15 4.97 3 5.15 3 5.38V20.5C3 20.78 3.22 21 3.5 21L3.66 20.97L9 18.9L15 21L20.64 19.1C20.85 19.03 21 18.85 21 18.62V3.5C21 3.22 20.78 3 20.5 3ZM15 19L9 16.89V5L15 7.11V19Z" fill="white"></path></g></svg><a data-v-7ba5bd90="" href="#">Подборка маршрутов</a></li><li data-v-7ba5bd90=""><svg data-v-7ba5bd90="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g data-v-7ba5bd90="" opacity="0.600657"><path data-v-7ba5bd90="" fill-rule="evenodd" clip-rule="evenodd" d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="white"></path></g></svg><a data-v-7ba5bd90="" href="#">О стране<span data-v-7ba5bd90="">+ скачать .PDF</span></a></li></ul></div></div></section><section data-v-7ba5bd90="" class="settings flex"><a data-v-7ba5bd90="" href="#" class="settings__setting settings__setting-city flex-column"><span data-v-7ba5bd90="" class="settings__label">Город получения и возврата</span><span data-v-7ba5bd90="" class="settings__choice">Карловы Вары</span></a><div data-v-7ba5bd90="" class="settings__divider"></div><a data-v-7ba5bd90="" href="#" class="settings__setting settings__setting-dates flex-column"><span data-v-7ba5bd90="" class="settings__label">Даты аренды</span><span data-v-7ba5bd90="" class="settings__choice">28 фев. – 9 мар. · 10 дней</span></a><a data-v-7ba5bd90="" href="#" class="settings__setting settings__setting-filters flex"><span data-v-7ba5bd90="" class="settings__choice">Расширенные фильтры</span><svg data-v-7ba5bd90="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g data-v-7ba5bd90="" opacity="0.6"><path data-v-7ba5bd90="" fill-rule="evenodd" clip-rule="evenodd" d="M7 10L12 15L17 10H7Z" fill="white"></path></g></svg></a></section><section data-v-7ba5bd90="" class="cars__header flex"><div data-v-7ba5bd90="" class="cars__header__column-left"><h2 data-v-7ba5bd90="">
+           123 автомобилей из <span data-v-7ba5bd90="" style="white-space: nowrap;">2 102</span></h2><a data-v-7ba5bd90="" href="#" class="cars__header__type-link">Все<span data-v-7ba5bd90="">112</span></a><a data-v-7ba5bd90="" href="#" class="cars__header__type-link">Компактные<span data-v-7ba5bd90="">89</span></a><a data-v-7ba5bd90="" href="#" class="cars__header__type-link">Средний класс<span data-v-7ba5bd90="">102</span></a><a data-v-7ba5bd90="" href="#" class="cars__header__type-link">Люкс<span data-v-7ba5bd90="">54</span></a><a data-v-7ba5bd90="" href="#" class="cars__header__type-link">Внедорожники<span data-v-7ba5bd90="">24</span></a><div data-v-7ba5bd90="" id="cars__header__type-active-bar"></div></div><div data-v-7ba5bd90="" class="cars__header__column-right"><a data-v-7ba5bd90="" href="#" class="cars__header__cheap">Сначала дешевые</a><a data-v-7ba5bd90="" href="#" class="cars__header__display"><svg data-v-7ba5bd90="" width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-7ba5bd90="" fill-rule="evenodd" clip-rule="evenodd" d="M0 6H5V0H0V6ZM0 13H5V7H0V13ZM6 13H11V7H6V13ZM12 13H17V7H12V13ZM6 6H11V0H6V6ZM12 0V6H17V0H12Z"></path></svg></a><a data-v-7ba5bd90="" href="#" class="cars__header__display cars__header__display-active"><svg data-v-7ba5bd90="" width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-7ba5bd90="" fill-rule="evenodd" clip-rule="evenodd" d="M0 13H17V7H0V13ZM0 0V6H17V0H0Z"></path></svg></a></div></section><section data-v-7ba5bd90="" class="cars__types"><a data-v-7ba5bd90="" href="#" class="cars__type"><div data-v-7ba5bd90="" class="cars__type__overlay"></div><h3 data-v-7ba5bd90="">Новые</h3><span data-v-7ba5bd90="">453 автомобиля</span><div data-v-7ba5bd90="" class="cars__type__wrapper"><img data-v-7ba5bd90="" src="/img/new.66f86730.png" alt="new"></div></a><a data-v-7ba5bd90="" href="#" class="cars__type"><div data-v-7ba5bd90="" class="cars__type__overlay"></div><h3 data-v-7ba5bd90="">Быстрые</h3><span data-v-7ba5bd90="">26 автомобилей</span><div data-v-7ba5bd90="" class="cars__type__wrapper"><img data-v-7ba5bd90="" src="/img/fast.cbcfe931.png" alt="fast"></div></a><a data-v-7ba5bd90="" href="#" class="cars__type"><div data-v-7ba5bd90="" class="cars__type__overlay"></div><h3 data-v-7ba5bd90="">Экономичные</h3><span data-v-7ba5bd90="">213 автомобилей</span><div data-v-7ba5bd90="" class="cars__type__wrapper"><img data-v-7ba5bd90="" src="/img/economy.b600be8e.png" alt="economy"></div></a><a data-v-7ba5bd90="" href="#" class="cars__type"><div data-v-7ba5bd90="" class="cars__type__overlay"></div><h3 data-v-7ba5bd90="">Внедорожники</h3><span data-v-7ba5bd90="">453 автомобиля</span><div data-v-7ba5bd90="" class="cars__type__wrapper"><img data-v-7ba5bd90="" src="/img/crossroad.6d138f8e.png" alt="crossroad"></div></a></section><section data-v-7ba5bd90="" class="cars"></section><div data-v-7ba5bd90="" class="cars__button-row flex"><!----></div></div>
+    
+  <script type="text/javascript" src="/app.js"></script>
+
+</body></html>
